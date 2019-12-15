@@ -12,7 +12,8 @@ After the annotation you will have images, project file (JSON) and annotation fi
 
 Recommended OS is Ubuntu 16.04 or higher, Windows 10 is also supported. You should use Python 3.6 or higher.  
 
-The recommended way to set up a project environment is set up a Python environement (e.g. ```python3.6 -m venv .env```), activate it (e.g., on Linux: ```source .env/bin/activate```, on Windows ```.env/Scripts/activate.bat```) and install the required python packages: on Linux: ```pip install -U pip && pip install -r requirements.txt```, on Windows ```python -m pip install -U pip && python -m pip install -r requirements.txt```.  
+The recommended way to set up a project environment is set up a Python environement (e.g. ```python3.6 -m venv .env```), activate it (e.g., on Linux: ```source .env/bin/activate```, on Windows ```.env/Scripts/activate.bat```) and install the required python packages.  
+If you are on Windows, you need to firstly install *shapely* package separately, you can find instructions here: https://pypi.org/project/Shapely/ Next, on Linux: ```pip install -U pip && pip install -r requirements.txt```, on Windows ```python -m pip install -U pip && python -m pip install -r requirements.txt```.  
 The tensorflow package is installing separatelly: if you have installed GPU-environment (highly recommended for U-net training) you can build it from source (https://www.tensorflow.org/install/source), install as a package (https://www.tensorflow.org/install/pip) or use it in Docker-container (https://www.tensorflow.org/install/docker) If you do not have a GPU environment, you can simply install tensorflow package as follows: ```pip install tensorflow==1.15.0```. The recommended version of tensorflow is 1.12.0 or higher, but lower than 2.0.0.  
 
 ## Preparing mask images from annotation
