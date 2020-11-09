@@ -35,6 +35,7 @@ python augment_images.py -i data/lungs-roi/images-training -m data/lungs-roi/mas
 ```
 
 The command above creates the folder *augmented* and saves augmented images and masks into it.  
+Note: augmentation is implemented using imgaug, you can extend the applied augmentation techniques using docs from the official repository: https://github.com/aleju/imgaug  
 
 ## U-net training
 
